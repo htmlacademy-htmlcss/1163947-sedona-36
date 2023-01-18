@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Диана Сидорова](https://up.htmlacademy.ru/htmlcss/36/user/1163947).
-* Наставник: `Неизвестно`.
+- Студент: [Диана Сидорова](https://up.htmlacademy.ru/htmlcss/36/user/1163947).
+- Наставник: [Дмитрий Дроганов](https://htmlacademy.ru/profile/dmdragon)
 
 ---
 
