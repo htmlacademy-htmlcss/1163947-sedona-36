@@ -424,16 +424,23 @@ body {
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
+
   list-style: none;
   padding: 0 70px
 }
 
+
 .hotel-card {
   width: 340px;
   padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   box-sizing: border-box;
+}
+
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
 }
 
 .hotel-card-link {
