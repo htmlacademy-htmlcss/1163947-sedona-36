@@ -125,7 +125,7 @@
       </div>
 
       <section class="hotels-found">
-        <h2 class="visually-hidden">Найденные гостиницы</h2>
+        <h2 class="visually-hidden">Список гостиниц</h2>
         <div class="control-select-wrap">
           <p class="control-select-wrap-title title-main-black">
             Найдено гостиниц: <span>38</span>
@@ -146,11 +146,12 @@
           </a>
         </div>
 
-
         <ul class="hotel-list">
           <li class="hotel-card">
-            <a class="hotel-card-link" href="">
+            <a class="hotel-card-link-img" href="">
               <img class="hotel-card-img" width="300" height="212" src="images/mountains-1.jpg" alt="Горы." />
+            </a>
+            <a class="hotel-card-link-title" href="">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="hotel-card-type-housing">Гостиница</p>
@@ -158,23 +159,33 @@
             <a class="button hotel-card-more-btn" href="card-hotel.html">подробнее</a>
             <button class="button hotel-card-to-favourites-btn" type="button">в избранное</button>
             <!-- TODO: сделать звездочки -->
-            <div class="hotel-card-rating text-center">Рейтинг: 8,5</div>
+            <div class="">ЗВЕЗДОЧКИ</div>
+            <div class="hotel-card-rating text-center">Рейтинг:
+              <span>8,5</span>
+            </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="">
+            <a class="hotel-card-link-img" href="">
               <img class="hotel-card-img" width="300" height="212" src="images/mountains-2.jpg" alt="Горы." />
-              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <a class="hotel-card-link-title" href="">
+              <h3 class="hotel-card-title">Villas at Poco Diablo Villas at Poco Diablo Villas at Poco Diablo Villas at
+                Poco Diablo Villas at Poco Diablo</h3>
             </a>
             <p class="hotel-card-type-housing">Гостиница</p>
             <b class="hotel-card-price">От 5000 ₽</b>
             <a class="button hotel-card-more-btn" href="card-hotel.html">подробнее</a>
             <button class="button hotel-card-in-favourites-btn" type="button">в избранном</button>
             <!-- TODO: сделать звездочки -->
-            <div class="hotel-card-rating text-center">Рейтинг: 9,2</div>
+            <div class="hotel-card-rating text-center">Рейтинг:
+              <span>9,2</span>
+            </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="">
+            <a class="hotel-card-link-img" href="">
               <img class="hotel-card-img" width="300" height="212" src="images/mountains-3.jpg" alt="Горы." />
+            </a>
+            <a class="hotel-card-link-title" href="">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <p class="hotel-card-type-housing">Гостиница</p>
@@ -182,11 +193,15 @@
             <a class="button hotel-card-more-btn" href="card-hotel.html">подробнее</a>
             <button class="button hotel-card-to-favourites-btn" type="button">в избранное</button>
             <!-- TODO: сделать звездочки -->
-            <div class="hotel-card-rating text-center">Рейтинг: 6,9</div>
+            <div class="hotel-card-rating text-center">Рейтинг:
+              <span>6,9</span>
+            </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="">
+            <a class="hotel-card-link-img" href="">
               <img class="hotel-card-img" width="300" height="212" src="images/mountains-4.jpg" alt="Горы." />
+            </a>
+            <a class="hotel-card-link-title" href="">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <p class="hotel-card-type-housing">Гостиница</p>
@@ -194,7 +209,9 @@
             <a class="button hotel-card-more-btn" href="card-hotel.html">подробнее</a>
             <button class="button hotel-card-to-favourites-btn" type="button">в избранное</button>
             <!-- TODO: сделать звездочки -->
-            <div class="hotel-card-rating text-center">Рейтинг: 5,0</div>
+            <div class="hotel-card-rating text-center">Рейтинг:
+              <span>5,0</span>
+            </div>
           </li>
         </ul>
 
@@ -212,7 +229,7 @@
             <a class="pagination-link" href="">4</a>
           </li>
           <li>
-            <button class="pagination-more-btn">
+            <button class="pagination-more-btn" type="button">
               <span class="visually-hidden">Еще страницы</span>
               <span class="pagination-more-span">...</span>
             </button>
@@ -238,33 +255,31 @@
       </section>
 
       <div class="bottom-footer">
-        <div class="contacts-wrapper">
-          <section class="footer-social">
-            <h2 class="visually-hidden">Иконки социальных сетей</h2>
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="footer-social-link" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Вконтакте</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="footer-social-link" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden">Телеграм</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">Ютуб</span>
-                </a>
-              </li>
-            </ul>
-          </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Иконки социальных сетей</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-          <section class="footer-contacts">
-            <h2 class="visually-hidden">Контакты</h2>
-            <a class="footer-contacts-phone text-center" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </section>
-        </div>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="footer-contacts-phone text-center" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </section>
 
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="htmlacademy-logo" width="115" height="33" src="images/logo-htmlacademy.svg"
