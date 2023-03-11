@@ -49,7 +49,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button navigation-btn" href="hotels.html">хочу сюда</a>
+            <a class="button navigation-btn" href="hotels.html">хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -213,8 +213,88 @@
           </svg>
         </a>
       </div>
-
     </footer>
+    <!-- Чтобы сделать модальное окно видимым, нужно удалить класс modal-container-close -->
+    <div class="modal-container modal-container-close">
+      <div class="modal-search"><button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title title-main-black">Поиск гостиницы в Седоне</h2>
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="form-search-label form-search-label-calendar">
+                <span class="form-search-label-span">Дата Заезда:</span>
+                <input class="form-search-field" type="text" name="arrival-date" placeholder="27 апреля 2020">
+              </label>
+              <p class="form-search-message message-error">
+                Мы не можем отправить вас в прошлое.
+              </p>
+            </div>
+            <div class="field-group">
+              <label class="form-search-label form-search-label-calendar">
+                <span class="form-search-label-span">Дата выезда:</span>
+                <input class="form-search-field" type="text" name="date-departure" placeholder="1 сентября 2023">
+              </label>
+              <p class="form-search-message">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+
+            <div class="field-group-flex">
+              <label class="form-search-label">
+                <span class="form-search-label-span">Взрослые:</span>
+                <div class="form-search-field-wrap">
+                  <button class="form-search-sign-button" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                      <path d="M0 0v2h14V0H0Z" />
+                    </svg>
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                  </button>
+                  <input class="form-search-field-quantity" type="number" name="number-adults" value="2">
+                  <button class="form-search-sign-button" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    </svg>
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
+                  </button>
+                </div>
+              </label>
+
+              <label class="form-search-label">
+                <div class="form-search-tooltip-wrap">
+                  <span class="form-search-label-span">Дети:</span>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">i</button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                      будут с вами, возраст
+                      которых от 6 до
+                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </div>
+
+                <div class="form-search-field-wrap">
+                  <button class="form-search-sign-button" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                      <path d="M0 0v2h14V0H0Z" />
+                    </svg>
+                    <span class="visually-hidden">Уменьшить количество детей</span>
+                  </button>
+                  <input class="form-search-field-quantity" type="number" name="amount-childrenen" value="2">
+                  <button class="form-search-sign-button" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    </svg>
+                    <span class="visually-hidden">Увеличить количество детей</span>
+                  </button>
+                </div>
+              </label>
+            </div>
+            <button class="form-search-button" type="submit">
+              Найти
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 
