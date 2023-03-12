@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sedona</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico"> <!-- 32×32 -->
   </head>
 
   <body>
@@ -217,7 +218,8 @@
     </footer>
     <!-- Чтобы сделать модальное окно видимым, нужно удалить класс modal-container-close -->
     <div class="modal-container ">
-      <div class="modal-search"><button class="modal-close-button">
+      <div class="modal-search">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -243,8 +245,10 @@
             </div>
 
             <div class="field-group-flex">
-              <label class="form-search-label">
-                <span class="form-search-label-span">Взрослые:</span>
+              <div class="form-search-label">
+                <label for="adults">
+                  <span class="form-search-label-span">Взрослые:</span>
+                </label>
                 <div class="form-search-field-wrap">
                   <button class="form-search-sign-button" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
@@ -252,7 +256,7 @@
                     </svg>
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
                   </button>
-                  <input class="form-search-field-quantity" type="number" name="adults" value="2">
+                  <input class="form-search-field-quantity" type="number" name="adults" id="adults" value="2">
                   <button class="form-search-sign-button" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
@@ -260,19 +264,22 @@
                     <span class="visually-hidden">Увеличить количество взрослых</span>
                   </button>
                 </div>
-              </label>
 
-              <label class="form-search-label">
-                <div class="form-search-tooltip-wrap">
+              </div>
+
+              <div class="form-search-label">
+                <label for="children">
                   <span class="form-search-label-span">Дети:</span>
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">i</button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
-                      будут с вами, возраст
-                      которых от 6 до
-                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                  </span>
-                </div>
+
+                </label>
+
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">i</button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                    будут с вами, возраст
+                    которых от 6 до
+                    18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
 
                 <div class="form-search-field-wrap">
                   <button class="form-search-sign-button" type="button">
@@ -281,7 +288,7 @@
                     </svg>
                     <span class="visually-hidden">Уменьшить количество детей</span>
                   </button>
-                  <input class="form-search-field-quantity" type="number" name="children " value="2">
+                  <input class="form-search-field-quantity" type="number" name="children" id="children" value="2">
                   <button class="form-search-sign-button" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
@@ -289,7 +296,9 @@
                     <span class="visually-hidden">Увеличить количество детей</span>
                   </button>
                 </div>
-              </label>
+
+              </div>
+
             </div>
             <button class="form-search-button" type="submit">
               Найти
