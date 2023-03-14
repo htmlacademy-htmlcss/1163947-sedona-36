@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -42,6 +49,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -268,12 +276,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  width: 530px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .navigation-user {
+  width: 268px;
   margin-right: 70px;
 }
 
@@ -504,6 +514,11 @@ body {
   min-height: 385px;
   padding: 102px 85px 80px;
   box-sizing: border-box;
+}
+
+.advantages-img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-item-square,
@@ -843,6 +858,10 @@ body {
   margin-left: -8px;
 }
 
+.breadcrumbs-link-current {
+  pointer-events: none;
+}
+
 .catalog-filter {
   display: flex;
 }
@@ -985,11 +1004,13 @@ body {
   color: #000000;
   background: #F2F2F2;
   border: 2px solid transparent;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1088,6 +1109,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -1280,6 +1302,7 @@ body {
 .pagination-current {
   color: #000000;
   background: #F2F2F2;
+  pointer-events: none;
 }
 
 .pagination-current:hover {
@@ -1306,6 +1329,7 @@ body {
   color: #000000;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .modal-container {
@@ -1577,11 +1601,13 @@ body {
   color: #000000;
   background: #F2F2F2;
   border: none;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
 .form-search-field-quantity::-webkit-outer-spin-button,
 .form-search-field-quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
